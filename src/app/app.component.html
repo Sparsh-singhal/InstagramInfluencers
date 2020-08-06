@@ -1,7 +1,14 @@
-<div class="main" fxLayout="column" fxLayoutAlign="center center">
-  <h2 id="head1">WE ARE</h2>
-  <h1 id="head2">INSTAGRAM INFLUENCERS</h1>
-  <h2 id="head3"><img style="height: 6vmin;" src="https://www.groovenexus.com/wp-content/uploads/2019/08/Antaragni-logo.png"> ANTARAGINI</h2>
+<div class="main" fxLayout="column" fxLayoutAlign="start center">
+  <h2 id="head1">
+    <img
+      style="height: 10vmin;"
+      src="https://www.groovenexus.com/wp-content/uploads/2019/08/Antaragni-logo.png"
+    />
+  </h2>
+  <h1 id="head2">
+    ANTAR<span style="color: var(--orange-color);">AGNI</span> <br />
+    INFLUENCERS
+  </h1>
   <div
     class="links"
     fxLayout="row"
@@ -11,7 +18,14 @@
     <a class="main-link" href="#facebook">FACEBOOK</a>
     <a class="main-link" href="#youtube">YOUTUBE</a>
     <a class="main-link" href="#instagram">INSTAGRAM</a>
-    <a class="main-link" href="#linkedin">LINKEDIN</a>
+  </div>
+  <div style="margin-top: 5rem;">
+    <a class="button" *ngIf="show" href="#register">
+      REGISTER
+    </a>
+    <a class="button" *ngIf="!show" href="#register">
+      DASHBOARD
+    </a>
   </div>
 </div>
 <div id="about">
@@ -26,14 +40,22 @@
     <mat-card fxFlex>
       <mat-card-title>ABOUT</mat-card-title>
       <mat-card-content
-        >Initiated in 1965, Antaragni has emerged as the biggest college-based fiesta in North India and as one of the most awaited and anticipated cultural event of the country. With its exciting competitions, splendid performances, and glamorous pro-nites, Antaragni is one of the largest cultural festival inviting a crowd of over 1.25 Lakh students from 350 different colleges. Over the 53 years, Antaragni has seen many outstanding talents and a lot of scintillating performances by the likes of KSHMR, Adnan Sami, Quintino, Amit Trivedi, Atif Aslam and many more. Let’s all get together and see what surprises Antaragni has up its sleeves this time.
+        >Initiated in 1965, Antaragni has emerged as the biggest college-based
+        fiesta in North India and as one of the most awaited and anticipated
+        cultural event of the country. With its exciting competitions, splendid
+        performances, and glamorous pro-nites, Antaragni is one of the largest
+        cultural festival inviting a crowd of over 1.25 Lakh students from 350
+        different colleges. Over the 53 years, Antaragni has seen many
+        outstanding talents and a lot of scintillating performances by the likes
+        of KSHMR, Adnan Sami, Quintino, Amit Trivedi, Atif Aslam and many more.
+        Let’s all get together and see what surprises Antaragni has up its
+        sleeves this time.
       </mat-card-content>
     </mat-card>
-    
   </div>
 </div>
 <div id="about">
-  <h3><span style="color: var(--orange-color);">WHY</span> US </h3>
+  <h3><span style="color: var(--orange-color);">WHY</span> US</h3>
   <div
     class="about-content container"
     fxLayout.gt-md="row wrap"
@@ -41,28 +63,39 @@
     fxLayoutAlign="center center"
   >
     <mat-card fxFlex="45" *ngFor="let item of why">
-      <mat-card-title>{{item.title}}</mat-card-title>
-      <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="4vmin">
-        <i mat-card-avatar class={{item.icon}} aria-hidden="true"></i>
-        <mat-card-content>{{item.content}}</mat-card-content>
+      <mat-card-title>{{ item.title }}</mat-card-title>
+      <div
+        fxLayout="row"
+        fxLayoutAlign="space-between center"
+        fxLayoutGap="4vmin"
+      >
+        <i mat-card-avatar class="{{ item.icon }}" aria-hidden="true"></i>
+
+        <mat-card-content>{{ item.content }}</mat-card-content>
       </div>
     </mat-card>
   </div>
 </div>
 <div id="responsibilities">
-  <h3 style="background-color: rgba(0, 0, 0, 0.582);"><span style="color: var(--orange-color);">RES</span>PONSIBILITIES</h3>
+  <h3 style="background-color: rgba(0, 0, 0, 0.582);">
+    <span style="color: var(--orange-color);">RES</span>PONSIBILITIES
+  </h3>
   <div
     class="about-content container-fluid"
     fxLayout.gt-md="row wrap"
     fxLayout.lt-lg="column"
     fxLayoutAlign="center center"
   >
-    <mat-card class="responsibility-card" style="position: relative;" fxFlex="20" *ngFor="let item of responsibilities">
-  <div class="responsibility-show">
-        <mat-card-title>{{item.title}}</mat-card-title>
-        <mat-card-content>{{item.content}}</mat-card-content>
+    <mat-card
+      class="responsibility-card"
+      style="position: relative;"
+      fxFlex="20"
+      *ngFor="let item of responsibilities"
+    >
+      <div class="responsibility-show">
+        <mat-card-title>{{ item.title }}</mat-card-title>
+        <mat-card-content>{{ item.content }}</mat-card-content>
       </div>
-      
     </mat-card>
   </div>
 </div>
@@ -75,70 +108,121 @@
     fxLayoutAlign="center center"
   >
     <mat-card fxFlex="45" *ngFor="let item of incentive">
-      <mat-card-title>{{item.title}}</mat-card-title>
-      <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="4vmin">
-        <i mat-card-avatar class={{item.icon}} aria-hidden="true"></i>
-        <mat-card-content>{{item.content}}</mat-card-content>
+      <mat-card-title>{{ item.title }}</mat-card-title>
+      <div
+        fxLayout="row"
+        fxLayoutAlign="space-between center"
+        fxLayoutGap="4vmin"
+      >
+        <i mat-card-avatar class="{{ item.icon }}" aria-hidden="true"></i>
+        <mat-card-content>{{ item.content }}</mat-card-content>
       </div>
     </mat-card>
   </div>
 </div>
 <div style="background-color: var(--dark-bgcolor);">
   <div class="container">
-  <div
-    class="about-content showcase"
-    fxLayout="row wrap"
-    fxLayout.lt-lg="column"
-    fxLayoutAlign="center center"
-  >
-    <div style="text-align: center;" fxFlex="30" *ngFor="let item of facts">
-        <span style="font-size: 3.5rem;font-weight: 300;">{{item.number}}</span>
-        <i style="background-color: transparent;font-size: 3rem;" class={{item.icon}} aria-hidden="true"></i>
-        <mat-card-content style="font-size: 1.3rem;font-weight: 300;">{{item.title}}</mat-card-content>
+    <div
+      class="about-content showcase"
+      fxLayout="row wrap"
+      fxLayout.lt-lg="column"
+      fxLayoutAlign="center center"
+    >
+      <div style="text-align: center;" fxFlex="30" *ngFor="let item of facts">
+        <span style="font-size: 3.5rem; font-weight: 300;">{{
+          item.number
+        }}</span>
+        <i
+          style="background-color: transparent; font-size: 3rem;"
+          class="{{ item.icon }}"
+          aria-hidden="true"
+        ></i>
+        <mat-card-content style="font-size: 1.3rem; font-weight: 300;">{{
+          item.title
+        }}</mat-card-content>
+      </div>
     </div>
   </div>
-  </div>
-  
 </div>
-    <div id="sponsors" fxLayout="column" fxLayoutAlign="center center"> 
+<div id="sponsors" fxLayout="column" fxLayoutAlign="center center">
   <h3 class="sponsors-h3">OUR SPONSORS</h3>
-  <mat-card class="container" fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="5vmin">
-    <img style="height: 15vmin; " src="https://i.ytimg.com/vi/NlVpLOb_7c0/maxresdefault.jpg">
-    <img style="height: 15vmin; " src="https://www.gizmochina.com/wp-content/uploads/2019/03/FreeVector-Sony-Vector-Logo.jpg">
-    <img style="height: 15vmin; " src="https://media.idownloadblog.com/wp-content/uploads/2018/07/Apple-logo-black-and-white.png">
+  <mat-card
+    class="container"
+    fxLayout="row"
+    fxLayoutAlign="center center"
+    fxLayoutGap="5vmin"
+  >
+    <img
+      style="height: 15vmin;"
+      src="https://i.ytimg.com/vi/NlVpLOb_7c0/maxresdefault.jpg"
+    />
+    <img
+      style="height: 15vmin;"
+      src="https://www.gizmochina.com/wp-content/uploads/2019/03/FreeVector-Sony-Vector-Logo.jpg"
+    />
+    <img
+      style="height: 15vmin;"
+      src="https://media.idownloadblog.com/wp-content/uploads/2018/07/Apple-logo-black-and-white.png"
+    />
   </mat-card>
 </div>
 <div id="contact">
- 
   <h3><span style="color: var(--orange-color);">CONTACT</span> US</h3>
-  <div class="container" fxLayout="row" fxLayoutAlign="center center" fxLayout.lt-lg="column" fxLayoutGap="5vmin">
-    <div class="contact-content" style="position: relative;" fxFlex="100" fxFlex.gt-md="50" *ngFor="let item of contacts">
-      <div class="contact-img-container"><img class="contact-img" src={{item.src}} alt=""></div>
-      <div class="contact-name">{{item.name}}</div>
-      <div class="contact-title">{{item.title}}</div>
+  <div
+    class="container"
+    fxLayout="row wrap"
+    fxLayoutAlign="center center"
+    fxLayout.lt-lg="column"
+    fxLayoutGap="5vmin"
+  >
+    <div
+      class="contact-content"
+      style="position: relative;"
+      fxFlex="100"
+      fxFlex.gt-md="30"
+      *ngFor="let item of contacts"
+    >
+      <div class="contact-img-container">
+        <img class="contact-img" src="{{ item.src }}" alt="" />
+      </div>
+      <div class="contact-name first">
+        <i class="fa fa-phone" aria-hidden="true"></i>&nbsp; {{ item.phone }}
+        <br />
+        <i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp;
+        {{ item.email }}
+        <br />
+        <a href="{{ item.linkedin }}"
+          ><i class="fa fa-linkedin" aria-hidden="true"></i></a
+        >&nbsp;
+        <a href="{{ item.google }}"
+          ><i class="fa fa-google" aria-hidden="true"></i></a
+        >&nbsp;
+        <a href="{{ item.facebook }}"
+          ><i class="fa fa-facebook" aria-hidden="true"></i
+        ></a>
+      </div>
+      <div class="contact-name second">{{ item.name }}</div>
+      <div class="contact-title">{{ item.title }}</div>
     </div>
-  </div>
-  <div class="container">
-    <h4>SAY HELLO</h4>
-    Name: *
-    <input class="input" type="text" />
-    E-Mail: *
-    <input class="input" type="email" />
-    Message: *
-    <textarea class="input"></textarea>
-      <button class="input">Submit</button>
   </div>
 </div>
 <div id="faqs">
-  <h3 style="background-color: rgba(0, 0, 0, 0.582);"><span style="color: var(--orange-color);">FAQ</span>s</h3>
+  <h3 style="background-color: rgba(0, 0, 0, 0.582);">
+    <span style="color: var(--orange-color);">FAQ</span>s
+  </h3>
   <div
     class="about-content container-fluid"
     fxLayout="row wrap"
     fxLayoutAlign="center center"
   >
-    <mat-card style="background-color: rgb(41, 41, 41);" fxFlex="100" fxFlex.gt-md="45" *ngFor="let item of FAQS">
-      <mat-card-title class="faq-ques">{{item.question}}</mat-card-title>
-        <mat-card-content>{{item.answer}}</mat-card-content>
+    <mat-card
+      style="background-color: rgb(41, 41, 41);"
+      fxFlex="100"
+      fxFlex.gt-md="45"
+      *ngFor="let item of FAQS"
+    >
+      <mat-card-title class="faq-ques">{{ item.question }}</mat-card-title>
+      <mat-card-content>{{ item.answer }}</mat-card-content>
     </mat-card>
   </div>
 </div>

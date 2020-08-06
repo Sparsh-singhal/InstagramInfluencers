@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatCardModule } from '@angular/material/card';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [AppComponent],
@@ -16,6 +17,7 @@ import { MatCardModule } from '@angular/material/card';
     BrowserAnimationsModule,
     FlexLayoutModule,
     MatCardModule,
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
