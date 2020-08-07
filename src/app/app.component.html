@@ -1,10 +1,11 @@
 <div class="main" fxLayout="column" fxLayoutAlign="start center">
-  <h2 id="head1">
+  <h2 id="head1" data-aos="fade-right">
     <img
       style="height: 10vmin;"
       src="https://www.groovenexus.com/wp-content/uploads/2019/08/Antaragni-logo.png"
     />
   </h2>
+  <hr data-aos="fade-left" />
   <h1 id="head2">
     ANTAR<span style="color: var(--orange-color);">AGNI</span> <br />
     INFLUENCERS
@@ -14,12 +15,13 @@
     fxLayout="row"
     fxLayoutAlign="center center"
     fxLayoutGap="2rem"
+    data-aos="fade-left"
   >
     <a class="main-link" href="#facebook">FACEBOOK</a>
     <a class="main-link" href="#youtube">YOUTUBE</a>
     <a class="main-link" href="#instagram">INSTAGRAM</a>
   </div>
-  <div style="margin-top: 5rem;">
+  <div style="margin-top: 5rem;" data-aos="fade-right">
     <a class="button" *ngIf="show" href="#register">
       REGISTER
     </a>
@@ -29,7 +31,9 @@
   </div>
 </div>
 <div id="about">
-  <h3><span style="color: var(--orange-color);">ABOUT</span> US</h3>
+  <h3 data-aos="fade-left">
+    <span style="color: var(--orange-color);">ABOUT</span> US
+  </h3>
   <div
     class="about-content container"
     fxLayout="row"
@@ -37,23 +41,38 @@
     fxLayout.lt-lg="column"
     fxLayoutGap="5vmin"
   >
-    <mat-card fxFlex>
+    <mat-card fxFlex data-aos="fade-right">
       <mat-card-title>ABOUT</mat-card-title>
       <mat-card-content
-        >Initiated in 1965, Antaragni has emerged as the biggest college festivals in North India and as one of the most awaited cultural events of the country. With its exciting competitions, splendid performances, and glamorous pro-nites, Antaragni is a spectacle like no other, inviting a crowd of over 1.25 Lakh students from 350 different colleges. Over 55 years of its glorious history, Antaragni has seen many outstanding talents and scintillating performances by the likes of Shankar-Ehsaan-Loy, KSHMR, Adnan Sami, Quintino, Amit Trivedi, Atif Aslam and many more. We have carved a niche for ourselves not only with participants and artists but with the most reputed brands through years of successful and creative collaborations. Constantly evolving and committed to bringing its audience what they look for, we have a lot planned even in these testing times – so jump on for the ride of your lives!
+        >Initiated in 1965, Antaragni has emerged as the biggest college
+        festivals in North India and as one of the most awaited cultural events
+        of the country. With its exciting competitions, splendid performances,
+        and glamorous pro-nites, Antaragni is a spectacle like no other,
+        inviting a crowd of over 1.25 Lakh students from 350 different colleges.
+        Over 55 years of its glorious history, Antaragni has seen many
+        outstanding talents and scintillating performances by the likes of
+        Shankar-Ehsaan-Loy, KSHMR, Adnan Sami, Quintino, Amit Trivedi, Atif
+        Aslam and many more. We have carved a niche for ourselves not only with
+        participants and artists but with the most reputed brands through years
+        of successful and creative collaborations. Constantly evolving and
+        committed to bringing its audience what they look for, we have a lot
+        planned even in these testing times – so jump on for the ride of your
+        lives!
       </mat-card-content>
     </mat-card>
   </div>
 </div>
 <div id="about">
-  <h3><span style="color: var(--orange-color);">WHY</span> US</h3>
+  <h3 data-aos="fade-left">
+    <span style="color: var(--orange-color);">WHY</span> US
+  </h3>
   <div
     class="about-content container"
     fxLayout.gt-md="row wrap"
     fxLayout.lt-lg="column"
     fxLayoutAlign="center center"
   >
-    <mat-card fxFlex="45" *ngFor="let item of why">
+    <mat-card fxFlex="45" *ngFor="let item of why" data-aos="fade-right">
       <mat-card-title>{{ item.title }}</mat-card-title>
       <div
         fxLayout="row"
@@ -68,7 +87,7 @@
   </div>
 </div>
 <div id="responsibilities">
-  <h3 style="background-color: rgba(0, 0, 0, 0.582);">
+  <h3 data-aos="fade-left" style="background-color: rgba(0, 0, 0, 0.582);">
     <span style="color: var(--orange-color);">RES</span>PONSIBILITIES
   </h3>
   <div
@@ -82,23 +101,26 @@
       style="position: relative;"
       fxFlex="20"
       *ngFor="let item of responsibilities"
+      data-aos="fade-right"
     >
       <div class="responsibility-show">
-      <mat-card-title>{{ item.title }}</mat-card-title>
-      <mat-card-content>{{ item.content }}</mat-card-content>
+        <mat-card-title>{{ item.title }}</mat-card-title>
+        <mat-card-content>{{ item.content }}</mat-card-content>
       </div>
     </mat-card>
   </div>
 </div>
 <div id="about">
-  <h3><span style="color: var(--orange-color);">Inc</span>entive</h3>
+  <h3 data-aos="fade-left">
+    <span style="color: var(--orange-color);">Inc</span>entive
+  </h3>
   <div
     class="about-content container"
     fxLayout.gt-md="row wrap"
     fxLayout.lt-lg="column"
     fxLayoutAlign="center center"
   >
-    <mat-card fxFlex="45" *ngFor="let item of incentive">
+    <mat-card fxFlex="45" *ngFor="let item of incentive" data-aos="fade-right">
       <mat-card-title>{{ item.title }}</mat-card-title>
       <div
         fxLayout="row"
@@ -119,7 +141,12 @@
       fxLayout.lt-lg="column"
       fxLayoutAlign="center center"
     >
-      <div style="text-align: center;" fxFlex="30" *ngFor="let item of facts">
+      <div
+        style="text-align: center;"
+        fxFlex="30"
+        *ngFor="let item of facts"
+        data-aos="fade-right"
+      >
         <span style="font-size: 3.5rem; font-weight: 300;">{{
           item.number
         }}</span>
@@ -158,7 +185,9 @@
   </mat-card>
 </div>
 <div id="contact">
-  <h3><span style="color: var(--orange-color);">CONTACT</span> US</h3>
+  <h3 data-aos="fade-left">
+    <span style="color: var(--orange-color);">CONTACT</span> US
+  </h3>
   <div
     class="container"
     fxLayout="row wrap"
@@ -172,37 +201,40 @@
       fxFlex="100"
       fxFlex.gt-md="30"
       *ngFor="let item of contacts"
+      data-aos="fade-right"
     >
       <div class="contact-img-container">
         <img class="contact-img" src="{{ item.src }}" alt="" />
       </div>
-        <div class="contact-name first">
-          
-          <div><i class="fa fa-phone" aria-hidden="true"></i>&nbsp; {{ item.phone }}</div>
-          <div><i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp;
-            {{ item.email }}</div>
-          
-          <div>
-              <a href="{{ item.linkedin }}"
-              ><i class="fa fa-linkedin" aria-hidden="true"></i></a
-            >&nbsp;
-            <a href="{{ item.google }}"
-              ><i class="fa fa-google" aria-hidden="true"></i></a
-            >&nbsp;
-            <a href="{{ item.instagram }}"
-              ><i class="fa fa-instagram" aria-hidden="true"></i
-            ></a>
-          </div>
-          
+      <div class="contact-name first">
+        <div>
+          <i class="fa fa-phone" aria-hidden="true"></i>&nbsp; {{ item.phone }}
         </div>
-        <div class="contact-name second">{{ item.name }}</div>
-    
+        <div>
+          <i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp;
+          {{ item.email }}
+        </div>
+
+        <div>
+          <a href="{{ item.linkedin }}"
+            ><i class="fa fa-linkedin" aria-hidden="true"></i></a
+          >&nbsp;
+          <a href="{{ item.google }}"
+            ><i class="fa fa-google" aria-hidden="true"></i></a
+          >&nbsp;
+          <a href="{{ item.instagram }}"
+            ><i class="fa fa-instagram" aria-hidden="true"></i
+          ></a>
+        </div>
+      </div>
+      <div class="contact-name second">{{ item.name }}</div>
+
       <div class="contact-title">{{ item.title }}</div>
     </div>
   </div>
 </div>
 <div id="faqs">
-  <h3 style="background-color: rgba(0, 0, 0, 0.582);">
+  <h3 style="background-color: rgba(0, 0, 0, 0.582);" data-aos="fade-left">
     <span style="color: var(--orange-color);">FAQ</span>s
   </h3>
   <div
@@ -215,6 +247,7 @@
       fxFlex="100"
       fxFlex.gt-md="45"
       *ngFor="let item of FAQS"
+      data-aos="fade-right"
     >
       <mat-card-title class="faq-ques">{{ item.question }}</mat-card-title>
       <mat-card-content>{{ item.answer }}</mat-card-content>

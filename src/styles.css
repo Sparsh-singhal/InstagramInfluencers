@@ -2,40 +2,42 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap");
 
 @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
 html,
 body {
-	height: 100%;
+  height: 100%;
 }
 body {
-	margin: 0;
-	/* font-family: Roboto, "Helvetica Neue", sans-serif; */
-	color: white;
-	font-family: "Raleway", sans-serif;
+  margin: 0;
+  /* font-family: Roboto, "Helvetica Neue", sans-serif; */
+  color: white;
+  font-family: "Raleway", sans-serif;
+  overflow-x: hidden;
+  width: 103%;
 }
 :root {
-	--orange-color: rgb(253, 94, 19);
-	--dark-bgcolor: rgba(41, 40, 40);
+  --orange-color: rgb(253, 94, 19);
+  --dark-bgcolor: rgba(41, 40, 40);
 }
 
 body::-webkit-scrollbar {
-	width: 10px;
+  width: 10px;
 }
 
 body::-webkit-scrollbar-track {
-	background-color: rgba(0, 0, 0, 0.582);
+  background-color: rgba(0, 0, 0, 0.582);
 }
 
 body::-webkit-scrollbar-thumb {
-	background-color: rgb(22, 22, 22);
+  background-color: rgb(22, 22, 22);
 }
 @media only screen and (max-width: 600px) {
-	html {
-		font-size: 12px;
-	}
+  html {
+    font-size: 12px;
+  }
 }

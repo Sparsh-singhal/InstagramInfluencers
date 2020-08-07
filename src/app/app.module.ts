@@ -10,16 +10,16 @@ import { MatCardModule } from '@angular/material/card';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
-  declarations: [AppComponent],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    FlexLayoutModule,
-    MatCardModule,
-    FontAwesomeModule,
-  ],
-  providers: [],
-  bootstrap: [AppComponent],
+	declarations: [ AppComponent ],
+	imports: [
+		BrowserModule,
+		AppRoutingModule,
+		BrowserAnimationsModule,
+		FlexLayoutModule,
+		MatCardModule,
+		FontAwesomeModule
+	],
+	providers: [],
+	bootstrap: [ AppComponent ]
 })
 export class AppModule {}
