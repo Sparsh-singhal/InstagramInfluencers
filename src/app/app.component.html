@@ -1,3 +1,11 @@
+<div class="button-div" data-aos="fade-right">
+  <a class="button" *ngIf="show" href="#register">
+    REGISTER
+  </a>
+  <a class="button" *ngIf="!show" href="#register">
+    DASHBOARD
+  </a>
+</div>
 <div class="main" fxLayout="column" fxLayoutAlign="start center">
   <h2 id="head1" data-aos="fade-right">
     <img
@@ -20,14 +28,6 @@
     <a class="main-link" href="#facebook">FACEBOOK</a>
     <a class="main-link" href="#youtube">YOUTUBE</a>
     <a class="main-link" href="#instagram">INSTAGRAM</a>
-  </div>
-  <div style="margin-top: 5rem;" data-aos="fade-right">
-    <a class="button" *ngIf="show" href="#register">
-      REGISTER
-    </a>
-    <a class="button" *ngIf="!show" href="#register">
-      DASHBOARD
-    </a>
   </div>
 </div>
 <div id="about">
@@ -112,7 +112,7 @@
 </div>
 <div id="about">
   <h3 data-aos="fade-left">
-    <span style="color: var(--orange-color);">Inc</span>entive
+    <span style="color: var(--orange-color);">INC</span>ENTIVES
   </h3>
   <div
     class="about-content container"
